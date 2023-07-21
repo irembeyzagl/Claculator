@@ -1,0 +1,39 @@
+body{text-align: center;}
+    table{
+        background-color: bisque;
+        border-spacing: 10px;
+        text-align: center;
+        position: relative;
+        left: 450px;
+        top: 150px;
+
+        
+    }
+    table .btn{
+        width: 150px;
+        height: 30px;
+        background-color: gray;
+        text-align: center;
+        line-height: 60px;
+        color:white;
+        font-size: 1.5em;
+    }
+    
+    #islem,#gösterge{
+        padding: 5px;
+        text-align: right;
+    }
+    
+    #gösterge{
+        height: 60px;
+        background-color: gray;
+        color: white;
+        font-size: 1.8em;
+        text-align: right;
+        line-height: 40px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    #islem{
+background-color: cadetblue;
+    }
