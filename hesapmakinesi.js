@@ -1,6 +1,5 @@
 var optDurum=false,opt="",sonuc=0
-//Rakamların kontrolü
-//sınıf adıyla tüm rakamları dizi olarak alıyoruz
+
 var btnRakam=document.querySelectorAll('.btnRakam')
 var textGösterge=document.querySelector('#gösterge')
 var btnOpt=document.querySelectorAll('.btnOpt')//işlem butonlarının kontrolü
@@ -10,18 +9,17 @@ var btnCE=document.querySelector('.btnCE')
 var btnEsit=document.querySelector('.btnEsit')
 var btnNokta=document.querySelector('.btnNokta')
 
-//butonlara basıldı kontrolü,forEach ile tüm nesnelere olat atayacağız
+
 
 btnRakam.forEach(function(element){
     element.onclick=function(e){
-        //baştaki sıfır değerini kaldırmak için ve opt basılıp basılmadığını kontrol etmek için
+       
         if(textGösterge.textContent=='0' || optDurum){
             textGösterge.textContent=' '
         }
-        //text nesnesini okuyarak td içindeki değeri alıyoruz
-
+       
 textGösterge.textContent+=this.textContent
-optDurum=false //+,- gibi operator işlemi yapıldıysa text kutusunu sıfırlaması gerekiyor
+optDurum=false
     }
 })
 btnOpt.forEach(function(element){
@@ -59,7 +57,7 @@ btnCE.onclick=function(e){
 btnEsit.onclick=function(e){
     islem.textContent=' '
     optDurum=true
-    switch(opt){//hafızadaki opt işlemi
+    switch(opt){
 
 case '+':textGösterge.textContent=(sonuc + Number(textGösterge.textContent))
 break
